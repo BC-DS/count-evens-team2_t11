@@ -107,18 +107,18 @@ ostream& operator<<(ostream& os, const UnorderedList& ol) {
 	return os;
 }
 
-int count_evens(Node currentNode) {
+int count_evens(Node *currentNode) {
 	// recursive function to count the number of even numbers in this linked list.
 
-	if (currentNode.getNext() == NULL) {
+	if (currentNode->getNext() == NULL) {
 		return 0;
 	}
 	else {
-		if (currentNode.getData() % 2 == 0) {
-			return 1 + count_evens(currentNode.getNext());
+		if (currentNode->getData() % 2 == 0) {
+			return 1 + count_evens(currentNode->getNext());
 		}
 		else {
-			return count_evens(currentNode.getNext());
+			return count_evens(currentNode->getNext());
 		}
 	}
 	

@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CountEvens",
+    "\\CountEvens\\CountEvens"
   ],
   "PreviewInSolutionExplorer": false
 }

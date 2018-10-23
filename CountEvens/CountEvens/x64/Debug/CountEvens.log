@@ -1,7 +1,2 @@
 ﻿  CountEvens.cpp
-c:\users\toirovd\desktop\side\countevens-cpp\countevens\countevens\countevens.cpp(118): error C2664: 'int count_evens(Node)': cannot convert argument 1 from 'Node *' to 'Node'
-  c:\users\toirovd\desktop\side\countevens-cpp\countevens\countevens\countevens.cpp(118): note: No constructor could take the source type, or constructor overload resolution was ambiguous
-c:\users\toirovd\desktop\side\countevens-cpp\countevens\countevens\countevens.cpp(121): error C2664: 'int count_evens(Node)': cannot convert argument 1 from 'Node *' to 'Node'
-  c:\users\toirovd\desktop\side\countevens-cpp\countevens\countevens\countevens.cpp(121): note: No constructor could take the source type, or constructor overload resolution was ambiguous
-c:\users\toirovd\desktop\side\countevens-cpp\countevens\countevens\countevens.cpp(173): error C2664: 'int count_evens(Node)': cannot convert argument 1 from 'Node *' to 'Node'
-  c:\users\toirovd\desktop\side\countevens-cpp\countevens\countevens\countevens.cpp(173): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+  CountEvens.vcxproj -> C:\Users\pearcej\source\repos\old-countevens-cpp\CountEvens\x64\Debug\CountEvens.exe
