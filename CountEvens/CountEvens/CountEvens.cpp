@@ -1,3 +1,5 @@
+//This program was designed to teach recursive linked list iteration
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -143,7 +145,9 @@ UnorderedList read_numbers_return_list(bool verbose) {
 		while (!myFile.eof()) {
 			myFile >> output;
 			numberList.push_back(output);
-			cout << output << endl;
+			if (verbose) {
+				cout << output << endl;
+			}
 		}
 	}
 	myFile.close();
@@ -159,7 +163,7 @@ UnorderedList read_numbers_return_list(bool verbose) {
 int main() {
 	UnorderedList numbersList;
 	numbersList = read_numbers_return_list(true);
-	cout << "There are " << to_string(count_evens(numbersList.head)) << " even numbers in the list.";
+	cout << "There are " << count_evens(numbersList.head) << " even numbers in the list.";
 	
 	return 0;
 }
