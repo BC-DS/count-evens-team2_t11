@@ -134,38 +134,27 @@ UnorderedList read_numbers_return_list(bool verbose) {
 	cout << "What is the name of the file? ";
 	cin >> filename;
 
-	// get the list of strings from the file.This list will need to be converted to
-	// a list of numbers in a
-	vector<string> stringList;
+	// get the integers from the file. 
+	vector<int> numberList;
 	ifstream myFile;
 	myFile.open(filename);
-	char output[100];
+	int output;
 	if (myFile.is_open()) {
 		while (!myFile.eof()) {
 			myFile >> output;
-			stringList.push_back(output);
+			numberList.push_back(output);
+			cout << output << endl;
 		}
 	}
 	myFile.close();
-
-	// time to create an integer version of the numbers list
-	vector<int> numberList;
-	for (int i = 0; i < stringList.size(); i++) {
-		if (verbose) {
-			cout << stringList[i] << endl;
-			numberList.push_back(atoi(stringList[i].c_str()));
-		}
-	}
 
 	// Now create a linked list version of this number sequence
 	UnorderedList created_list;
 	for (int i = 0; i < numberList.size(); i++) {
 		created_list.add(numberList[i]);
 	}
-
 	return created_list;
 }
-
 
 int main() {
 	UnorderedList numbersList;
