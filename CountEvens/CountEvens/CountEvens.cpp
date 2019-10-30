@@ -133,7 +133,7 @@ UnorderedList read_numbers_return_list(bool verbose) {
 	be placed into a linked list and returned.
 	*/
 	string filename;
-	cout << "What is the name of the file? (text.txt is provided)";
+	cout << "What is the name of the file? (text.txt is provided) ";
 	cin >> filename;
 
 	// get the integers from the file. 
