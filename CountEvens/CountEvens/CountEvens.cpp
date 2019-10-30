@@ -1,4 +1,5 @@
-//This program was designed to teach recursive linked list iteration
+// This program was designed to teach recursive linked list iteration
+// By Dr. Jan Pearce
 
 #include <iostream>
 #include <fstream>
@@ -123,7 +124,6 @@ int count_evens(Node *currentNode) {
 			return count_evens(currentNode->getNext());
 		}
 	}
-	
 }
 
 UnorderedList read_numbers_return_list(bool verbose) {
@@ -133,7 +133,7 @@ UnorderedList read_numbers_return_list(bool verbose) {
 	be placed into a linked list and returned.
 	*/
 	string filename;
-	cout << "What is the name of the file? ";
+	cout << "What is the name of the file? (text.txt is provided)";
 	cin >> filename;
 
 	// get the integers from the file. 
